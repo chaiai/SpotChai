@@ -4,8 +4,8 @@
 
 sudo apt update
 sudo apt -y purge docker* libreoffice*
-sudo apt -y remove cmake
-sudo apt -y full-upgrade
+# sudo apt -y remove cmake    # Building CMake takes too long and don't need build tools on Nano
+sudo apt -y upgrade
 sudo apt -y autoremove
 sudo apt -y autoclean
 
